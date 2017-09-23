@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Vending Machine</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <style type="text/css">
+    #grid {
+      width: 200px;
+      margin-top: 40px;
+      margin-right: 150px;
+    }
+
+    .griditems {
+      width: 200px float:left;
+    }
+
+    #rightColumn {
+      float: right;
+      width: 150px;
+      margin-right: -200px
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Vending Machine </h1>
+    <hr/>
+    <ul class="list-group" id="errorMessages"></ul>
+
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row contentRows"></div>
+      </div>
+      <div class="col-md-4">
+        <div id="rightcol">
+          <form class="form-horizontal" role="form" id="enter-form">
+            <div class="form-group" style="text-align: center ">
+              <label for="inputAmount">
+            Total $ input</label>
+              <input type="text " class="form-control" id="inputAmount" readonly />
+            </div>
+
+
+            <div class="form-group " style="text-align: center; display:inline-block;">
+              <button type="button" class="btn btn-default amount-adding-btn" id="add-dollarAmount-button">Add Dollar
+            </button>
+
+              <button type="button" class="btn btn-default amount-adding-btn" id="add-quarterAmount-button">Add Quarter
+              </button>
+            </div>
+
+            <div class="form-group" style="text-align: center;  display:inline-block;">
+              <button type="button" class="btn btn-default amount-adding-btn" id="add-dimeAmount-button">Add Dime
+            </button>
+
+              <button type="button" class="btn btn-default amount-adding-btn" id="add-nickelAmount-button">Add Nickel
+      </button>
+            </div>
+            <hr/>
+
+            <div class="col-md-4">
+              <div class="form-group" style="text-align: center">
+                <label for="Message">Messages</label>
+                <input type="text" class="form-control" id="Message" style="width:250px" readonly/>
+              </div>
+
+              <form class="form-horizontal " role="form " id="input-Items">
+                <div class="form-group" style="text-align: center">
+                  <label for="input-Items">Items</label>
+                  <input type="text" class="form-context" style="width:90px" id="input-Items" readonly/>
+                </div>
+
+                <div class="form-group" style="text-align: center">
+                  <input type="hidden" id="itemBought">
+                  <button type="button" class="btn btn-default" id="Btn-Make-Purchase" style="width:120px;" onclick="" />Make Purchase
+                  </button>
+                </div>
+                <hr/>
+
+                <form>
+                  <form class="form-vertical" role="form" id="input-form">
+                    <div class="form-group" style="text-align: center">
+                      <label for="input-changeAmount">Change Amount</label>
+                      <input type="text" class="form-control" id="input-changeAmount" style="width:240px" readonly/>
+                    </div>
+
+                    <div class="form-group" style="text-align: center">
+
+                      <button type="button" class="btn btn-default" id="change-return-button" style="width:150px" onclick="" /> Change Return
+                      </button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+      </div>
+
+
+      <script src="js/jquery-2.2.4.min.js" type="text/javascript"></script>
+      <script src="js/bootstrap.js" type="text/javascript"></script>
+      <script src="js/home.js" type="text/javascript"></script>
+</body>
+
+</html>
